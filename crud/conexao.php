@@ -11,6 +11,8 @@ if ($conexao === false)
 	echo mysqli_connect_error();	
 	//String vazia,nao ocorreu erro
 }
-else
+else{
+	
+}
 
 ?>
