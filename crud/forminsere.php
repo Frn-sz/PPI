@@ -14,6 +14,7 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
+    <main class= "container">
     <h1>Cadastro de biografia:</h1>
     <form action = "insere.php" method = "post" enctype="multipart/form-data">
         <p>Apelido: <input type = "text" name="apelido"></p>
@@ -41,7 +42,7 @@
         <p><input type = "reset" value="Redefinir"></p>
         <p><input type = "submit" value = "Enviar"></p>
     </form>
-    
+</main>
     <!--aq vai o rodapé-->
 
    <script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <meta charset="UTF-8">
     <title>Biografia</title>
 </head>
@@ -12,6 +21,8 @@
      $resultado = mysqli_query ($conexao,$sql);
      $biografia = mysqli_fetch_assoc($resultado);
     ?>
+
+    <main class="container">
     <img src = <?= "'../imagens/$biografia[foto]' width = '200'";?>>
     <p>Apelido: <?= $biografia['apelido']; ?> </p>
     <p>Nome verdadeiro: <?= $biografia['nome']; ?> </p>
@@ -35,5 +46,12 @@
     <p>Frases marcantes: <?= $biografia['frase']; ?> </p>
     <p>Referências: <?= $biografia['referencias']; ?> </p>
     <a href="biografias.php">Voltar</a>
+
+</main>
+
+<!--aq vai o rodapé-->
+
+<script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 </body>
 </html>

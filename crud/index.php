@@ -14,10 +14,9 @@
    <title>Biografias</title>
 </head>
 <body>
-<main>
-   <!--Aq eu vou colocar o require_once "cabecalho.php" (dentro do php)-->
+<?php require_once "../cabecalho.php"?>
 
-   <a href="forminsere.php">Cadastrar biografia</a>
+<main class= "container">
 <?php
 include_once "conexao.php";
 
