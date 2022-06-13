@@ -1,3 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+   <meta charset="UTF-8">
+   <title>Biografias</title>
+</head>
+<body>
+<main>
+   <!--Aq eu vou colocar o require_once "cabecalho.php" (dentro do php)-->
+
+   <a href="forminsere.php">Cadastrar biografia</a>
 <?php
 include_once "conexao.php";
 
@@ -22,3 +42,10 @@ foreach($infos as $chave => $info){
 
 echo "</tbody></table>"
 ?>
+   </main>
+   <!--aq vai o rodapé-->
+
+   <script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+</body>
+</html>
