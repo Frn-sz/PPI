@@ -15,7 +15,7 @@ foreach($infos as $chave => $info){
    echo "<td>" . $info['areac'] . "</td>";
   
    echo "<td><a href = 'vermais.php?id=$info[id]'> Ver Mais </a> / ";
-   echo "<a href = 'editar.php'> Editar </a> /";
+   echo "<a href = 'editar.php?id=$info[id]'> Editar </a> /";
    echo "<a href = '#'> Excluir </a></td></tr>";
    
 }
