@@ -11,22 +11,22 @@
     <form action = "insere.php" method = "post" enctype="multipart/form-data">
         <p>Apelido: <input type = "text" name="apelido"></p>
         <p>Nome verdadeiro: <input type = "text" name="nome"></p>
-        <p>Data de Nascimento: <input type = "date" name="dataNasc"></p>
-        <p>Data de Falecimento: <input type = "date" name="dataFal"></p>
-        <p>Local de Nascimento: <input type = "text" name="localNas"></p>
-        <p>Local de Nascimento: <input type = "text" name="localFal"></p>
+        <p>Data de nascimento: <input type = "date" name="dataNasc"></p>
+        <p>Data de falecimento: <input type = "date" name="dataFal"></p>
+        <p>Local de nascimento: <input type = "text" name="localNas"></p>
+        <p>Local de nascimento: <input type = "text" name="localFal"></p>
         <p>Pais: <input type = "text" name="pais"></p>
+        <p>Grupo social: <input type = "text" name="gpSocial"></p>
         <p>Pessoas famosas na família: <input type = "text" name="pesFamosa"></p>
-        <p>Grupo Social: <input type = "text" name="gpSocial"></p>
         <p>Formação: <input type = "text" name="formacao"></p>
         <p>Profissão: <input type = "text" name="profissao"></p>
         <p>Área de conhecimento: <input type = "text" name="areac"></p>
         <p>Mudança de grupo social: <input type = "text" name="mudancagp"></p>
-        <p>Evento Histórico:  <input type = "text" name="eventoHist"></p>
-        <p>Raça e Gênero <input type = "text" name="racaGen"></p>
-        <p>Contribuição: <input type = "text" name="contribuicao"></p>
-        <p>Legado Permanente: <input type = "text" name="legadoPerm"></p>
-        <p>Ato Político: <input type = "text" name="atoPoli"></p>
+        <p>Evento histórico:  <input type = "text" name="eventoHist"></p>
+        <p>Raça e gênero <input type = "text" name="racaGen"></p>
+        <p>Contribuições: <input type = "text" name="contribuicao"></p>
+        <p>Legado permanente: <input type = "text" name="legadoPerm"></p>
+        <p>Ato político: <input type = "text" name="atoPoli"></p>
         <p>Ideias: <input type = "text" name="ideias"></p>
         <p>Frases marcantes: <input type = "text" name="frase"></p>
         <p>Referências: <input type = "text" name="referencias"></p>
