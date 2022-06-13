@@ -18,6 +18,6 @@ VALUES ('$_POST[apelido]','$_POST[nome]','$nomearquivo','$_POST[dataNasc]','$_PO
 $result = mysqli_query($conexao, $sql);
 
 if($result){
-    header("location:biografias.php");
+    header("location:index.php");
 }
 ?>
