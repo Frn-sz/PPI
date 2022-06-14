@@ -14,6 +14,7 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
+<?php require_once "../cabecalho.php"?>
     <main class= "container">
     <h1>Cadastro de biografia:</h1>
         <form action = "insere.php" method = "post" enctype="multipart/form-data">

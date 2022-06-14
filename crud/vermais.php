@@ -21,7 +21,7 @@
      $resultado = mysqli_query ($conexao,$sql);
      $biografia = mysqli_fetch_assoc($resultado);
     ?>
-
+<?php require_once "../cabecalho.php"?>
     <main class="container">
     <img src = <?= "'../imagens/$biografia[foto]' width = '200'";?>>
     <p>Apelido: <?= $biografia['apelido']; ?> </p>
