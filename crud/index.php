@@ -42,7 +42,7 @@ foreach($infos as $chave => $info){
   
    echo "<td><a href = 'vermais.php?id=$info[id]'> Ver Mais </a> / ";
    echo "<a href = 'editar.php?id=$info[id]'> Editar </a> /";
-   echo "<td class =''> <a href='#'" . "onclick='confirmacao($info[id])'>" . "Excluir </a>" ;
+   echo "<td class =''> <a href='#'" . "onclick='confirmacao($info[id])'>" . "Excluira </a>" ;
    
 }
 
