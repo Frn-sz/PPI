@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,16 +18,21 @@
 <body>
 <?php require_once "../cabecalho.php"?>
     <main class= "container">
-    <h1>Cadastro de biografia:</h1>
+    <center><h3>Cadastro de biografia:</h3></center>
+
+       
         <form action = "insere.php" method = "post" enctype="multipart/form-data">
         <p>Apelido: <input type = "text" name="apelido"></p>
-        <p>Área de conhecimento: <select>
+        <p>Nome verdadeiro: <input type = "text" name="nome"></p>
+        <p>Área de conhecimento: 
+            
+        <select name = "areac">
+
             <option value = "Física">Física</option>
             <option value = "Sociologia">Sociologia</option>
             <option value = "História">História</option>
-            
+
         </select></p>
-        <p>Nome verdadeiro: <input type = "text" name="nome"></p>
         <p>Data de nascimento: <input type = "date" name="dataNasc"></p>
         <p>Data de falecimento: <input type = "date" name="dataFal"></p>
         <p>Local de nascimento: <input type = "text" name="localNas"></p>
@@ -47,7 +54,9 @@
         <p>Imagem: <input type = "file" name = "arquivo"></p>
         <p><input type = "reset" value="Redefinir"></p>
         <p><input type = "submit" value = "Enviar"></p>
+      
     </form>
+
 </main>
     <!--aq vai o rodapé-->
 

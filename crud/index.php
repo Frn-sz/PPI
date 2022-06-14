@@ -11,6 +11,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
    <meta charset="UTF-8">
+  <script> 
+  function confirmacao(id) {
+     var resposta = confirm("Deseja remover este documento?");
+     if (resposta == true) {
+          window.location.href = "excluir.php?id="+id;
+     }}
+</script>
    <title>Biografias</title>
 </head>
 <body>
@@ -30,7 +37,7 @@ echo "<table class='highlight responsive-table centered'><thead><th> Imagem </th
 foreach($infos as $chave => $info){
    echo "<tr><td><img src = '../imagens/$info[foto]' width = '200'>" . "</td>";
    echo "<td>" . $info['nome'] . "</td>";
-   echo "<td>" . $info['dataNas'] . "-" . $info['dataFal'] . "</td>";
+   echo "<td>" . $info['dataNas'] . "&nbsp/&nbsp" . $info['dataFal'] . "</td>";
    echo "<td>" . $info['areac'] . "</td>";
   
    echo "<td><a href = 'vermais.php?id=$info[id]' class='btn-floating btn-medium waves-effect waves-light  grey lighten-3'> <i class='material-icons black-text'>search</i> </a> ";
