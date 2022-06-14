@@ -56,13 +56,13 @@
         <p>Profissão: <input type = "text" name="profissao"></p>
         <p>Mudança de grupo social: <input type = "text" name="mudancagp"></p>
         <p>Evento histórico:  <input type = "text" name="eventoHist"></p>
-        <p>Raça e gênero <input type = "text" name="racaGen"></p>
-        <p>Contribuições: <input type = "text" name="contribuicao"></p>
-        <p>Legado permanente: <input type = "text" name="legadoPerm"></p>
-        <p>Ato político: <input type = "text" name="atoPoli"></p>
-        <p>Ideias: <input type = "text" name="ideias"></p>
+        <p>Raça e gênero: <textarea class = "materialize-textarea" name="racagen"></textarea></p>
+        <p>Contribuições: <textarea class = "materialize-textarea"  name="contribuicao"></textarea></p>
+        <p>Legado permanente: <textarea class = "materialize-textarea"  name="legadoPerm"></textarea></p>
+        <p>Ato político: <textarea  class = "materialize-textarea" name="atoPoli"></textarea></p>
+        <p>Ideias: <textarea  class = "materialize-textarea"  name="ideias"></textarea></p>
         <p>Frases marcantes: <input type = "text" name="frase"></p>
-        <p>Referências: <input type = "text" name="referencias"></p>
+        <p>Referências: <textarea class = "materialize-textarea"  name="referencias"></textarea></p>
         <p>Imagem: <input type = "file" name = "arquivo"></p>
         <p><input type = "reset" value="Redefinir"></p>
         <p><input type = "submit" value = "Enviar"></p>
@@ -80,6 +80,9 @@
     $('select').formSelect();
   });
   </script>
-      
+<script>
+$('#textarea1').val('New Text');
+  M.textareaAutoResize($('#textarea1'));
+</script>
 </body>
 </html>
