@@ -33,7 +33,7 @@ $sql = "SELECT * FROM `biografias`";
 $result = mysqli_query($conexao, $sql);
 
 $infos = mysqli_fetch_all($result, MYSQLI_BOTH);
-echo "<table border = 1><thead><th> Imagem </th> <th>Nome</th><th>Período de vida</th><th>Área de conhecimento</th><th colspan = '4'> Operações </th> </thead><tbody>";
+echo "<table class='highlight responsive-table centered'><thead><th> Imagem </th> <th>Nome</th><th>Período de vida</th><th>Área de conhecimento</th><th colspan = '4'> Operações </th> </thead><tbody>";
 foreach($infos as $chave => $info){
    echo "<tr><td><img src = '../imagens/$info[foto]' width = '200'>" . "</td>";
    echo "<td>" . $info['nome'] . "</td>";

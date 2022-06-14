@@ -16,8 +16,7 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-
-<?php include "../cabecalho.php"?>
+<?php require_once "../cabecalho.php"?>
     <main class= "container">
     <center><h3>Cadastro de biografia:</h3></center>
 
