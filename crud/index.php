@@ -40,9 +40,9 @@ foreach($infos as $chave => $info){
    echo "<td>" . $info['dataNas'] . "&nbsp/&nbsp" . $info['dataFal'] . "</td>";
    echo "<td>" . $info['areac'] . "</td>";
   
-   echo "<td><a href = 'vermais.php?id=$info[id]'> Ver Mais </a> / ";
-   echo "<a href = 'editar.php?id=$info[id]'> Editar </a> /";
-   echo "<td class =''> <a href='#'" . "onclick='confirmacao($info[id])'>" . "Excluira </a>" ;
+   echo "<td><a href = 'vermais.php?id=$info[id]' class='btn-floating btn-medium waves-effect waves-light grey lighten-3'><i class='material-icons black-text'>search</i> </a> ";
+   echo "<a href = 'editar.php?id=$info[id]' class='btn-floating btn-medium waves-effect waves-light grey lighten-3'> <i class='material-icons black-text'>create</i> </a> ";
+   echo "<a href='#' onclick='confirmacao($info[id])' class='btn-floating btn-medium waves-effect waves-light grey lighten-3'> <i class='material-icons black-text'>delete</i> </a></td>" ;
    
 }
 

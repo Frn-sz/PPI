@@ -23,6 +23,7 @@
     ?>
 <?php require_once "../cabecalho.php"?>
     <main class="container">
+        <br><br>
     <img src = <?= "'../imagens/$biografia[foto]' width = '200'";?>>
     <p>Apelido: <?= $biografia['apelido']; ?> </p>
     <p>Nome verdadeiro: <?= $biografia['nome']; ?> </p>

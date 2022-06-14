@@ -33,8 +33,20 @@
             <option value = "História">História</option>
 
         </select></p>
-        <p>Data de nascimento: <input type = "date" name="dataNasc"></p>
-        <p>Data de falecimento: <input type = "date" name="dataFal"></p>
+       
+        <div class="row">
+        <div class="input-field col s12">
+            <input id= "dataNasc" type = "date" name="dataNasc"></p>
+            <label for="dataNasc">Data de nascimento</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="input-field col s12">
+            <input id= "dataFal" type = "date" name="dataFal"></p>
+            <label for="dataFal">Data de falecimento</label>
+        </div>
+        </div>
+       
         <p>Local de nascimento: <input type = "text" name="localNas"></p>
         <p>Local de nascimento: <input type = "text" name="localFal"></p>
         <p>Pais: <input type = "text" name="pais"></p>
@@ -54,7 +66,6 @@
         <p>Imagem: <input type = "file" name = "arquivo"></p>
         <p><input type = "reset" value="Redefinir"></p>
         <p><input type = "submit" value = "Enviar"></p>
-      
     </form>
 
 </main>
