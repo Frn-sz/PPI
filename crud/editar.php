@@ -73,6 +73,7 @@
         <p>Imagem: <input type = "file" name = "arquivo"> </p>
         <p><input type = "reset" value="Desfazer mudanças"></p>
         <p><input type = "submit" value = "Enviar"></p>
+        <input type = "hidden" name = "foto" value = <?= $infos['foto']; ?>
     </form>
 
 </main>
@@ -80,5 +81,10 @@
 
 <script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+<script> 
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+  </script>
 </body>
 </html>

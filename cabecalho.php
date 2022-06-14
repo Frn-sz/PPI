@@ -6,4 +6,4 @@
         <li><a href="../crud/forminsere.php">Cadastrar Biografias</a></li>
       </ul>
     </div>
-  </nav>
+</nav>
