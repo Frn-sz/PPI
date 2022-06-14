@@ -11,6 +11,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
    <meta charset="UTF-8">
+  <script> 
+  function confirmacao(id) {
+     var resposta = confirm("Deseja remover este documento?");
+     if (resposta == true) {
+          window.location.href = "excluir.php?id="+id;
+     }}
+</script>
    <title>Biografias</title>
 </head>
 <body>
@@ -30,12 +37,12 @@ echo "<table border = 1><thead><th> Imagem </th> <th>Nome</th><th>Período de vi
 foreach($infos as $chave => $info){
    echo "<tr><td><img src = '../imagens/$info[foto]' width = '200'>" . "</td>";
    echo "<td>" . $info['nome'] . "</td>";
-   echo "<td>" . $info['dataNas'] . "-" . $info['dataFal'] . "</td>";
+   echo "<td>" . $info['dataNas'] . "&nbsp/&nbsp" . $info['dataFal'] . "</td>";
    echo "<td>" . $info['areac'] . "</td>";
   
    echo "<td><a href = 'vermais.php?id=$info[id]'> Ver Mais </a> / ";
    echo "<a href = 'editar.php?id=$info[id]'> Editar </a> /";
-   echo "<a href = '#'> Excluir </a></td></tr>";
+   echo "<td class =''> <a href='#'" . "onclick='confirmacao($info[id])'>" . "Excluir </a>" ;
    
 }
 

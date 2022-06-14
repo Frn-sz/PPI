@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,11 +21,14 @@
     <main class= "container">
     <center><h3>Cadastro de biografia:</h3></center>
 
-        <fieldset>
+       
         <form action = "insere.php" method = "post" enctype="multipart/form-data">
         <p>Apelido: <input type = "text" name="apelido"></p>
         <p>Nome verdadeiro: <input type = "text" name="nome"></p>
-        <p>Área de conhecimento: <select>
+        <p>Área de conhecimento: 
+            
+        <select name = "areac">
+
             <option value = "Física">Física</option>
             <option value = "Sociologia">Sociologia</option>
             <option value = "História">História</option>
@@ -50,9 +55,9 @@
         <p>Imagem: <input type = "file" name = "arquivo"></p>
         <p><input type = "reset" value="Redefinir"></p>
         <p><input type = "submit" value = "Enviar"></p>
-        <input type="hidden" value = <?=
+      
     </form>
-</fieldset>
+
 </main>
     <!--aq vai o rodapé-->
 
