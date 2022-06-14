@@ -16,8 +16,14 @@
 <body>
     <main class= "container">
     <h1>Cadastro de biografia:</h1>
-    <form action = "insere.php" method = "post" enctype="multipart/form-data">
+        <form action = "insere.php" method = "post" enctype="multipart/form-data">
         <p>Apelido: <input type = "text" name="apelido"></p>
+        <p>Área de conhecimento: <select>
+            <option value = "Física">Física</option>
+            <option value = "Sociologia">Sociologia</option>
+            <option value = "História">História</option>
+            
+        </select></p>
         <p>Nome verdadeiro: <input type = "text" name="nome"></p>
         <p>Data de nascimento: <input type = "date" name="dataNasc"></p>
         <p>Data de falecimento: <input type = "date" name="dataFal"></p>
@@ -28,7 +34,6 @@
         <p>Pessoas famosas na família: <input type = "text" name="pesFamosa"></p>
         <p>Formação: <input type = "text" name="formacao"></p>
         <p>Profissão: <input type = "text" name="profissao"></p>
-        <p>Área de conhecimento: <input type = "text" name="areac"></p>
         <p>Mudança de grupo social: <input type = "text" name="mudancagp"></p>
         <p>Evento histórico:  <input type = "text" name="eventoHist"></p>
         <p>Raça e gênero <input type = "text" name="racaGen"></p>
@@ -47,5 +52,13 @@
 
    <script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>
    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+
+
+  <script> 
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+  </script>
+      
 </body>
 </html>

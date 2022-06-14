@@ -39,6 +39,8 @@
     <title> Edição </title>
 </head>
 <body>
+    <?php require_once "../cabecalho.php" ?>
+    
     <main class= "container">
         <h1> Edição de obras:</h1>
 <form action = "edita.php" method = "post" enctype="multipart/form-data">
