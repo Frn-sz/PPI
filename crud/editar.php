@@ -6,7 +6,7 @@
 
     $result = mysqli_query($conexao, $sql);
 
-    $infos = mysqli_fetch_assoc($result);
+    $info = mysqli_fetch_assoc($result);
 
 ?>
 
@@ -60,7 +60,7 @@
         <p>Imagem: <input type = "file" name = "arquivo"> </p>
         <p><input type = "reset" value="Desfazer mudanças"></p>
         <p><input type = "submit" value = "Enviar"></p>
-        <input type = "hidden" name = "foto" value = <?= $infos['foto']; ?>
+        <input type = "hidden" name = "foto" value = <?= $info['foto']; ?>
     </form>
 
 </main>
