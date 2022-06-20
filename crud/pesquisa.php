@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-
-   <!--Import Google Icon Font-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+ <!--Import Google Icon Font-->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-   <meta charset="UTF-8">
-  <script> 
-  function confirmacao(id) {
-     var resposta = confirm("Deseja remover este documento?");
-     if (resposta == true) {
-          window.location.href = "excluir.php?id="+id;
-     }}
-</script>
-   <title>Biografias</title>
 </head>
 <body>
-<?php require_once "../cabecalho.php"?>
-
-<main class= "container">
+    <main>
 <?php
-include_once "conexao.php";
 
 
-$sql = "SELECT * FROM `biografias`";
+include "../conexao.php";
+include "../cabecalho.php";
 
-$result = mysqli_query($conexao, $sql);
+$pesquisa = "%" . trim($_GET['busca']) . "%";
+
+$sql = "SELECT * FROM `biografias` WHERE nome LIKE '$pesquisa' OR apelido LIKE '$pesquisa'";
+
+$result = mysqli_query($conexao,$sql);
 
 $infos = mysqli_fetch_all($result, MYSQLI_BOTH);
-echo "<table class='highlight responsive-table'><thead><th> Imagem </th> <th>Nome</th><th>Período de vida</th><th>Área de conhecimento</th><th colspan = '4'> Operações </th> </thead><tbody>";
+
+echo "<table class='highlight responsive-table container'><thead><th> Imagem </th> <th>Nome</th><th>Período de vida</th><th>Área de conhecimento</th><th colspan = '4'> Operações </th> </thead><tbody>";
 foreach($infos as $chave => $info){
    echo "<tr><td><img src = '../imagens/$info[foto]' width = '200'>" . "</td>";
    echo "<td>" . $info['nome'] . "</td>";
@@ -48,10 +45,11 @@ foreach($infos as $chave => $info){
 
 echo "</tbody></table>"
 ?>
-   </main>
-   <!--aq vai o rodapé-->
-
-   <script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>
-   <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+    </main>
 </body>
-</html>
+
+
+<script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>
+   <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+
+ </html>
