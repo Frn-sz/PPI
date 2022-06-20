@@ -1,33 +1,16 @@
 <?php
     include "conexao.php";
-
     $id = $_GET['id'];
     $sql = "SELECT * FROM `biografias` WHERE id=$id";
-
     $result = mysqli_query($conexao, $sql);
-
     $info = mysqli_fetch_assoc($result);
+  ?>
 
-?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-
- <!--Import Google Icon Font-->
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <meta charset="UTF-8">
     <title> Edição </title>
-</head>
-<body>
+
     <?php require_once "../cabecalho.php" ?>
-    
+  
+<body>
     <main class= "container">
         <h1> Edição de obras:</h1>
 <form action = "edita.php" method = "post" enctype="multipart/form-data">
@@ -60,18 +43,10 @@
         <p>Imagem: <input type = "file" name = "arquivo"> </p>
         <p><input type = "reset" value="Desfazer mudanças"></p>
         <p><input type = "submit" value = "Enviar"></p>
-        <input type = "hidden" name = "foto" value = <?= $info['foto']; ?>
-    </form>
+        <input type = "hidden" name = "foto" value = <?= $info['foto']; ?>>
+</form>
 
 </main>
-<!--aq vai o rodapé-->
-
-<script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
-<script> 
-  $(document).ready(function(){
-    $('select').formSelect();
-  });
-  </script>
 </body>
-</html>
+
+<?php require_once "../rodape.php"?>

@@ -1,38 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-
-   <!--Import Google Icon Font-->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-   <meta charset="UTF-8">
-  <script> 
+<script> 
   function confirmacao(id) {
      var resposta = confirm("Deseja remover este documento?");
      if (resposta == true) {
           window.location.href = "excluir.php?id="+id;
      }}
 </script>
+
+<?php
+include_once "conexao.php";
+$sql = "SELECT * FROM `biografias`";
+$result = mysqli_query($conexao, $sql);
+$infos = mysqli_fetch_all($result, MYSQLI_BOTH);
+?>
+
    <title>Biografias</title>
-</head>
+
+ <?php require_once "../cabecalho.php"?>
+
 <body>
-<?php require_once "../cabecalho.php"?>
+
 
 <main class= "container">
 <?php
-include_once "conexao.php";
-
-
-$sql = "SELECT * FROM `biografias`";
-
-$result = mysqli_query($conexao, $sql);
-
-$infos = mysqli_fetch_all($result, MYSQLI_BOTH);
 echo "<table class='highlight responsive-table centered'><thead><th> Imagem </th> <th>Nome</th><th>Período de vida</th><th>Área de conhecimento</th><th colspan = '4'> Operações </th> </thead><tbody>";
 foreach($infos as $chave => $info){
    echo "<tr><td><img src = '../imagens/$info[foto]' width = '200'>" . "</td>";
@@ -49,9 +38,7 @@ foreach($infos as $chave => $info){
 echo "</tbody></table>"
 ?>
    </main>
-   <!--aq vai o rodapé-->
-
-   <script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>
-   <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+   
 </body>
-</html>
+
+<?php require_once "../rodape.php"?>
