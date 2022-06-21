@@ -7,7 +7,7 @@
 <body>
 
     <main class= "container">
-    <center><h3>Cadastro de biografia:</h3></center>
+    
 
        
         <form action = "insere.php" method = "post" enctype="multipart/form-data">
@@ -23,19 +23,9 @@
 
         </select></p>
        
-        <div class="row">
-        <div class="input-field col s12">
-            <input id= "dataNasc" type = "date" name="dataNasc"></p>
-            <label for="dataNasc">Data de nascimento</label>
-        </div>
-        </div>
-        <div class="row">
-        <div class="input-field col s12">
-            <input id= "dataFal" type = "date" name="dataFal"></p>
-            <label for="dataFal">Data de falecimento</label>
-        </div>
-        </div>
-       
+      
+        <input id= "dataNasc" type = "date" name="dataNasc"></p>
+        <input id= "dataFal" type = "date" name="dataFal"></p>
         <p>Local de nascimento: <input type = "text" name="localNas"></p>
         <p>Local de nascimento: <input type = "text" name="localFal"></p>
         <p>Pais: <input type = "text" name="pais"></p>
@@ -52,9 +42,25 @@
         <p>Ideias: <textarea  class = "materialize-textarea"  name="ideias"></textarea></p>
         <p>Frases marcantes: <input type = "text" name="frase"></p>
         <p>Referências: <textarea class = "materialize-textarea"  name="referencias"></textarea></p>
-        <p>Imagem: <input type = "file" name = "arquivo"></p>
-        <p><input type = "reset" value="Redefinir"></p>
-        <p><input type = "submit" value = "Enviar"></p>
+        <div class="file-field input-field">
+      <div class="btn brown darken-4">
+        <span><i class = "material-icons">add_a_photo</i></span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Adicione uma foto">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col offset-s6">
+    <a class="btn-floating  waves-effect waves-light brown darken-4"><i class="material-icons">restart_alt</i></a>
+      
+        <button class="btn-floating waves-effect waves-light brown darken-4" type="submit" name="action">
+        <i class="material-icons right">check</i>
+        </button>
+        </div>
+        </div>
+
     </form>
 
 </main>

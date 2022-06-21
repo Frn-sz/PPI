@@ -21,6 +21,12 @@ $infos = mysqli_fetch_all($result, MYSQLI_BOTH);
 
 
 <main class= "container">
+   <br>
+   <div class=" row">
+      <div class="col offset-s6">
+<a href = "forminsere.php" class="btn-floating waves-effect waves-light brown darken-4"><i class="material-icons">add</i></a>
+</div>
+   </div>
 <?php
 include_once "conexao.php";
 
