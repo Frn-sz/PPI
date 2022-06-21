@@ -36,15 +36,15 @@
         <p>Pessoas famosas na família: <input type = "text" name="pesFamosa" value = <?= $info['pesFamosa']?>></p>
         <p>Formação: <input type = "text" name="formacao" value = <?= $info['formacao']?>></p>
         <p>Profissão: <input type = "text" name="profissao" value = <?= $info['profissao']?>></p>
-        <p>Mudança de grupo social: <input type = "text" name="mudancagp" value = <?= $info['mudancaGp']?>></p>
+        <p>Mudança de grupo social: <input type = "text" name="mudancaGp" value = <?= $info['mudancaGp']?>></p>
         <p>Evento histórico:  <input type = "text" name="eventoHist" value = <?= $info['eventoHist']?>></p>
-        <p>Raça e gênero: <textarea class = "materialize-textarea" name="racagen" ><?= $info['racaGen']?></textarea></p>
+        <p>Raça e gênero: <textarea class = "materialize-textarea" name="racaGen" ><?= $info['racaGen']?></textarea></p>
         <p>Contribuições: <textarea class = "materialize-textarea"  name="contribuicao"  ><?= $info['contribuicao']?></textarea></p>
         <p>Legado permanente: <textarea class = "materialize-textarea"  name="legadoPerm"><?= $info['legadoPerm']?></textarea></p>
         <p>Ato político: <textarea  class = "materialize-textarea" name="atoPoli"  ><?= $info['atoPoli']?></textarea></p>
         <p>Ideias: <textarea  class = "materialize-textarea"  name="ideias"><?= $info['ideias']?></textarea></p>
         <p>Frases marcantes: <input type = "text" name="frase" value = <?= $info['apelido']?>></p>
-        <p>Referências: <textarea class = "materialize-textarea"  name="referencias"> value = <?= $info['referencias']?></textarea></p>
+        <p>Referências: <textarea class = "materialize-textarea"  name="referencias"> <?= $info['referencias']?></textarea></p>
         <div class="file-field input-field">
       <div class="btn brown darken-4">
         <span><i class = "material-icons">add_a_photo</i></span>
@@ -60,7 +60,7 @@
         <input type="file" name = "arquivo">
       </div>
       <div class="file-path-wrapper">
-        <input class="file-path validate" type="text" placeholder="Adicione um documento">
+        <input class="file-path validate" type="text" placeholder="Adicione um documento"  name = "arquivo">
       </div>
     </div>
     <div class="row">
@@ -72,6 +72,7 @@
         </button>
         </div>
         </div>
+        <input type = "hidden" name = "id" value = "<?=$info['id']?>">
 
     </form>
 </main>

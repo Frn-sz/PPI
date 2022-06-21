@@ -26,16 +26,21 @@
                 </div>
             </div>
         
-        <div class="input-field col s12">    
-            <select name = "areac">
-
+            <div class="row">
+                <div class="input-field col s12">
+            <select id = "select" name = "areac">
+            
             <option value = "Física">Física</option>
             <option value = "Sociologia">Sociologia</option>
             <option value = "História">História</option>
 
             </select>
-            <label>Área de conhecimento</label>
-         </div>
+            <label for = "select">Área de conhecimento</label>
+            </div>
+            </div>
+        
+           
+    
        
             <div class="row">
                 <div class="input-field col s12">
@@ -162,11 +167,27 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="input-field col s12">
-                  <p>Imagem: <input id="arquivo" type="file" name="arquivo"></p>
-                </div>
-            </div>
+            <div class="file-field input-field">
+      <div class="btn brown darken-4">
+        <span><i class = "material-icons">add_a_photo</i></span>
+        <input type="file" name = "foto">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Adicione uma foto">
+      </div>
+    </div>
+    <div class="file-field input-field">
+      <div class="btn brown darken-4">
+        <span><i class = "material-icons">upload_file</i></span>
+        <input type="file" name = "arquivo">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Adicione um documento"  name = "arquivo">
+      </div>
+    </div>
+
+   
+      
         
         
             <div class="row">
