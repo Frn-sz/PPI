@@ -7,7 +7,7 @@
      $biografia = mysqli_fetch_assoc($resultado);
     ?>
 
-    <title></title>
+    <title><?= $biografia['apelido']?></title>
     <?php require_once "../cabecalho.php"?>
 
 <body>
