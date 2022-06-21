@@ -58,7 +58,7 @@
         
             <div class="row">
                 <div class="input-field col s12">
-            <select id = "select" name = "areac">
+            <select id = "select" name = "areac" class = "dropdown-trigger">
             
             <option value = "Física">Física</option>
             <option value = "Sociologia">Sociologia</option>
@@ -235,6 +235,8 @@
 
 </main>
 </body>
+
+
 
 
 <?php require_once "../rodape.php"?>
