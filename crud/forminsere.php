@@ -169,9 +169,17 @@
             </div>
         
         
+            <div class="row">
+        <div class="col offset-s6">
+    <a class="btn-floating  waves-effect waves-light brown darken-4"><i class="material-icons">restart_alt</i></a>
+      
+        <button class="btn-floating waves-effect waves-light brown darken-4" type="submit" name="action">
+        <i class="material-icons right">check</i>
+        </button>
+        </div>
+        </div>
         
-        <p><input type = "reset" value="Redefinir"></p>
-        <p><input type = "submit" value = "Enviar"></p>
+      
     </form>
 
 </main>
