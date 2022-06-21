@@ -6,12 +6,12 @@ include_once "conexao.php";
 $id = $_POST['id'];
 $sql = "";
 //var_dump($_FILES);die;
-if ($_FILES['arquivo']['error'] == 0) {
+if ($_FILES['foto']['error'] == 0) {
         
-    $ext = strrchr($_FILES['arquivo']['tmp_name'], '.');
+    $ext = strrchr($_FILES['foto']['tmp_name'], '.');
     $nomearquivo = md5(time()) . $ext;
     $diretorio = "../imagens/";
-    move_uploaded_file($_FILES['arquivo']['tmp_name'], $diretorio.$nomearquivo);
+    move_uploaded_file($_FILES['foto']['tmp_name'], $diretorio.$nomearquivo);
 
     $sql = "UPDATE `biografias` SET `apelido` ='$_POST[apelido]',`nome`='$_POST[nome]',
     `foto`='$nomearquivo',`dataNas`='$_POST[dataNas]',`dataFal`='$_POST[dataFal]',`localNas`='$_POST[localNas]',`localFal`='$_POST[localFal]',

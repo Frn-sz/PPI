@@ -36,7 +36,7 @@
     <p>Frases marcantes: <?= $biografia['frase']; ?> </p>
     <p>Referências: <?= $biografia['referencias']; ?> </p>
     
-    <button class = "btn-floating brown darken-4"><a href="path_to_file" download="proposed_file_name">Download</a></button>
+    <button class = "btn-floating brown darken-4"><a href="../arquivos/<?= $biografia['arquivo'];?>" download="<?=$biografia['arquivo'];?>"><i class = "material-icons">file_download</i></a></button>
     <a href="biografias.php">Voltar</a>
 </main>
 </body>
