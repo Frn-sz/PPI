@@ -4,6 +4,38 @@
 
     <?php require_once "../cabecalho.php"?>
 
+    <style type="text/css">
+
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #4e342e !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #4e342e !important;
+    box-shadow: 0 1px 0 0 #4e342e !important;
+  }
+  /* label focus color */
+  .input-field input[type=date]:focus + label {
+    color: #4e342e !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=date]:focus {
+    border-bottom: 1px solid #4e342e !important;
+    box-shadow: 0 1px 0 0 #4e342e !important;
+  }
+/* label focus color */
+.input-field textarea:focus + label {
+    color: #4e342e !important;
+  }
+  /* label underline focus color */
+  .input-field textarea:focus {
+    border-bottom: 1px solid #4e342e !important;
+    box-shadow: 0 1px 0 0 #4e342e !important;
+  }
+
+</style>
+
 <body>
 
     <main class= "container">
