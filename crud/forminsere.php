@@ -3,7 +3,6 @@
     <title>Formulário de Cadastro</title>
 
     <?php require_once "../cabecalho.php"?>
-
     <style type="text/css">
 
   /* label focus color */
@@ -35,7 +34,6 @@
   }
 
 </style>
-
 <body>
 
     <main class= "container">
@@ -200,11 +198,11 @@
             </div>
 
             <div class="file-field input-field">
-      <div class="btn brown darken-4">
-        <span><i class = "material-icons">add_a_photo</i></span>
-        <input type="file" name = "foto">
-      </div>
-      <div class="file-path-wrapper">
+              <div class="btn brown darken-4">
+              <span><i class = "material-icons">add_a_photo</i></span>
+          <input type="file" name = "foto">
+          </div>
+        <div class="file-path-wrapper">
         <input class="file-path validate" type="text" placeholder="Adicione uma foto">
       </div>
     </div>
