@@ -45,10 +45,19 @@
         <div class="file-field input-field">
       <div class="btn brown darken-4">
         <span><i class = "material-icons">add_a_photo</i></span>
-        <input type="file">
+        <input type="file" name = "foto">
       </div>
       <div class="file-path-wrapper">
         <input class="file-path validate" type="text" placeholder="Adicione uma foto">
+      </div>
+    </div>
+    <div class="file-field input-field">
+      <div class="btn brown darken-4">
+        <span><i class = "material-icons">upload_file</i></span>
+        <input type="file" name = "arquivo">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Adicione um documento">
       </div>
     </div>
     <div class="row">
