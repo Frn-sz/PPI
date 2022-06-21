@@ -25,7 +25,8 @@
         <i class= "material-icons">menu</i></a>
 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="../crud/forminsere.php">Cadastrar Biografias</a></li>
+        <li>
+          <a href="../crud/forminsere.php">Cadastrar Biografias</a></li>
       </ul>
 
     </div>
