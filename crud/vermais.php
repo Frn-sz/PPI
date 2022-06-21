@@ -7,13 +7,13 @@
      $biografia = mysqli_fetch_assoc($resultado);
     ?>
 
-    <title>Biografia</title>
+    <title></title>
     <?php require_once "../cabecalho.php"?>
 
 <body>
     <main class="container">
     <br><br>
-    <img src = <?= "'../imagens/$biografia[foto]' width = '200'";?>>
+    <img class="right" src = <?= "'../imagens/$biografia[foto]' width = '200'";?>>
     <p>Apelido: <?= $biografia['apelido']; ?> </p>
     <p>Nome verdadeiro: <?= $biografia['nome']; ?> </p>
     <p>Área do conhecimento: <?= $biografia['areac']; ?> </p>

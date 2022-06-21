@@ -6,7 +6,7 @@
     $info = mysqli_fetch_assoc($result);
   ?>
 
-    <title> Edição </title>
+    <title><?= $info['apelido'] ?> </title>
 
     <?php require_once "../cabecalho.php" ?>
   
