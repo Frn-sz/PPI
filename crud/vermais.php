@@ -13,7 +13,14 @@
 <body>
     <main class="container">
     <br><br>
-    <img class="right" src = <?= "'../imagens/$biografia[foto]' width = '200'";?>>
+    <div class="row right">
+    <img src = <?= "'../imagens/$biografia[foto]' width = '400'";?>>
+    <br><br>
+    <div class="col offset-s5">
+    <button class = "btn-floating brown darken-4"><a href="../arquivos/<?= $biografia['arquivo'];?>" download="<?=$biografia['arquivo'];?>"><i class = "material-icons">file_download</i></a></button>
+    </div> 
+</div>
+
     <p>Apelido: <?= $biografia['apelido']; ?> </p>
     <p>Nome verdadeiro: <?= $biografia['nome']; ?> </p>
     <p>Área do conhecimento: <?= $biografia['areac']; ?> </p>
@@ -36,7 +43,7 @@
     <p>Frases marcantes: <?= $biografia['frase']; ?> </p>
     <p>Referências: <?= $biografia['referencias']; ?> </p>
     
-    <button class = "btn-floating brown darken-4"><a href="../arquivos/<?= $biografia['arquivo'];?>" download="<?=$biografia['arquivo'];?>"><i class = "material-icons">file_download</i></a></button>
+    
     <a href="biografias.php">Voltar</a>
 </main>
 </body>
