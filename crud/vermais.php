@@ -14,34 +14,85 @@
     <main class="container">
     <br><br>
     <div class="row right">
-    <img src = <?= "'../imagens/$biografia[foto]' width = '400'";?>>
+   
     <br><br>
     <div class="col offset-s5">
     <button class = "btn-floating brown darken-4"><a href="../arquivos/<?= $biografia['arquivo'];?>" download="<?=$biografia['arquivo'];?>"><i class = "material-icons">file_download</i></a></button>
     </div> 
 </div>
-
-    <p>Apelido: <?= $biografia['apelido']; ?> </p>
-    <p>Nome verdadeiro: <?= $biografia['nome']; ?> </p>
-    <p>Área do conhecimento: <?= $biografia['areac']; ?> </p>
-    <p>Data de nascimento: <?= $biografia['dataNas']; ?> </p>
-    <p>Data de falecimento: <?= $biografia['dataFal']; ?> </p>
-    <p>Local de nascimento: <?= $biografia['localNas']; ?> </p>
-    <p>Local de falecimento: <?= $biografia['localFal']; ?> </p>
-    <p>Pais: <?= $biografia['pais']; ?> </p>
-    <p>Grupo Social: <?= $biografia['gpSocial']; ?> </p>
-    <p>Pessoa famosa na família: <?= $biografia['pesFamosa']; ?> </p>
-    <p>Formação: <?= $biografia['formacao']; ?> </p>
-    <p>Profissão: <?= $biografia['profissao']; ?> </p>
-    <p>Mudança de grupo social: <?= $biografia['mudancaGp']; ?> </p>
-    <p>Evento histórico: <?= $biografia['eventoHist']; ?> </p>
-    <p>Raça e gênero: <?= $biografia['racaGen']; ?> </p>
-    <p>Contribuições: <?= $biografia['contribuicao']; ?> </p>
-    <p>Legado permanente: <?= $biografia['legadoPerm']; ?> </p>
-    <p>Ato político: <?= $biografia['atoPoli']; ?> </p>
-    <p>Ideias: <?= $biografia['ideias']; ?> </p>
-    <p>Frases marcantes: <?= $biografia['frase']; ?> </p>
-    <p>Referências: <?= $biografia['referencias']; ?> </p>
+<div class="row">
+    <div class="col s12 m7">
+      <div class="card grey lighten-3">
+        <div class="card-image">
+        <img src = <?= "'../imagens/$biografia[foto]' width = '400'";?>>
+        </div>
+        <div class="card-content">
+        <span class="card-title"><?= $biografia['nome']; ?></span>
+    <div class="row">
+    Apelido: <?= $biografia['apelido']; ?>
+    </div>
+    <div class="row ">
+    Área do conhecimento: <?= $biografia['areac']; ?> 
+    </div>
+    <div class="row ">
+    Data de nascimento: <?= $biografia['dataNas']; ?> 
+    </div>
+    <div class="row ">
+    Data de falecimento: <?= $biografia['dataFal']; ?> 
+    </div>
+    <div class="row ">
+    Local de nascimento: <?= $biografia['localNas']; ?> 
+    </div>
+    <div class="row ">
+    Local de falecimento: <?= $biografia['localFal']; ?> 
+    </div>
+    <div class="row ">
+    Pais: <?= $biografia['pais']; ?> 
+    </div>
+    <div class="row ">
+    Grupo Social: <?= $biografia['gpSocial']; ?> 
+    </div>
+    <div class="row ">
+    Pessoa famosa na família: <?= $biografia['pesFamosa']; ?> 
+    </div>
+    <div class="row ">
+    Formação: <?= $biografia['formacao']; ?> 
+    </div>
+    <div class="row ">
+    Profissão: <?= $biografia['profissao']; ?> 
+    </div>
+    <div class="row ">
+    Mudança de grupo social: <?= $biografia['mudancaGp']; ?>
+    </div>
+    <div class="row ">
+    Evento histórico: <?= $biografia['eventoHist']; ?> 
+    </div>
+    <div class="row ">
+    Raça e gênero: <?= $biografia['racaGen']; ?> 
+    </div>
+    <div class="row ">
+    Contribuições: <?= $biografia['contribuicao']; ?> 
+    </div>
+    <div class="row ">
+    Legado permanente: <?= $biografia['legadoPerm']; ?> 
+    </div>
+    <div class="row ">
+    Ato político: <?= $biografia['atoPoli']; ?> 
+    </div>
+    <div class="row ">
+    Ideias: <?= $biografia['ideias']; ?> 
+    </div>
+    <div class="row ">
+    Frases marcantes: <?= $biografia['frase']; ?> 
+    </div>
+    <div class="row ">
+    Referências: <?= $biografia['referencias']; ?>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
     
     
     <a href="biografias.php">Voltar</a>

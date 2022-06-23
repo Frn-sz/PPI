@@ -24,5 +24,5 @@
     $('.sidenav').sidenav();
   });
   </script>
-
+  
 </html>

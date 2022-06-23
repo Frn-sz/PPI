@@ -30,8 +30,8 @@
          <li> <div class="nav-wrapper">
       <form action = "pesquisa.php" method = "get">
         <div class="input-field">
-          <input id="search" type="search" name = "busca" required>
-          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <input id="search" type="search" name = "busca"  class = "white" placeholder="Busque por um nome">
+          <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
           <i class="material-icons">close</i>
         </div></li>
       </form>
