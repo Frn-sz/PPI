@@ -38,9 +38,10 @@ box-shadow: 0 1px 0 0 #4e342e !important;
 
 <?php require_once "../interface/cabecalho.php"?>
 
-<h3 class="center-align">Cadastro de Usuário:</h3>
 
-<div class="container">   
+<h3 class="center-align">Cadastro de Usuário:</h3>
+<div class="container">
+<div class="card-panel grey lighten-4 center-align">
     <form action = "cadastroUsuario.php" method = "post" enctype="multipart/form-data">
 
     
@@ -65,19 +66,19 @@ box-shadow: 0 1px 0 0 #4e342e !important;
             
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="email" type="text" name="email">
+                    <input id="email" type="email" name="email">
                     <label for="email">Email</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="senha" type="text" name="senha">
+                    <input id="senha" type="password" name="senha">
                     <label for="senha">Senha</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="repetirSenha" type="text" name="repetirSenha">
+                    <input id="repetirSenha" type="password" name="repetirSenha">
                     <label for="repetirSenha">Confirme sua senha</label>
                 </div>
             </div>
@@ -90,11 +91,12 @@ box-shadow: 0 1px 0 0 #4e342e !important;
     <i class="material-icons right">check</i>
     </button>
     </div>
-    </div>
+    
     
   
 </form>
-
+</div>
+</div>
 </main>
 </body>
 
