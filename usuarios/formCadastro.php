@@ -11,12 +11,23 @@ color: #4e342e !important;
 border-bottom: 1px solid #4e342e !important;
 box-shadow: 0 1px 0 0 #4e342e !important;
 }
+
 /* label focus color */
-.input-field input[type=date]:focus + label {
+.input-field input[type=email]:focus + label {
 color: #4e342e !important;
 }
 /* label underline focus color */
-.input-field input[type=date]:focus {
+.input-field input[type=email]:focus {
+border-bottom: 1px solid #4e342e !important;
+box-shadow: 0 1px 0 0 #4e342e !important;
+}
+
+/* label focus color */
+.input-field input[type=password]:focus + label {
+color: #4e342e !important;
+}
+/* label underline focus color */
+.input-field input[type=password]:focus {
 border-bottom: 1px solid #4e342e !important;
 box-shadow: 0 1px 0 0 #4e342e !important;
 }
@@ -67,7 +78,7 @@ box-shadow: 0 1px 0 0 #4e342e !important;
             <div class="row">
                 <div class="input-field col s6 offset-s3">
                     <input id="email" type="email" name="email">
-                    <label for="email">Email</label>
+                    <label for="email">E-mail</label>
                 </div>
             </div>
             <div class="row">
