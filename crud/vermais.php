@@ -8,7 +8,7 @@
     ?>
 
     <title><?= $biografia['apelido']?></title>
-    <?php require_once "../cabecalho.php"?>
+    <?php require_once "../interface/cabecalho.php"?>
 
 <body>
     <main class="container">
@@ -99,4 +99,4 @@
 </main>
 </body>
 
-<?php require_once "../rodape.php"?>
+<?php require_once "../interface/rodape.php"?>
