@@ -15,7 +15,7 @@ $infos = mysqli_fetch_all($result, MYSQLI_BOTH);
 
    <title>Biografias</title>
 
- <?php require_once "../cabecalho.php"?>
+ <?php require_once "../interface/cabecalho.php"?>
 
 <body>
 
@@ -55,4 +55,4 @@ echo "</tbody></table>"
    
 </body>
 
-<?php require_once "../rodape.php"?>
+<?php require_once "../interface/rodape.php"?>

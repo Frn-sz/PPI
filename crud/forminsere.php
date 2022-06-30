@@ -2,7 +2,7 @@
 
     <title>Formulário de Cadastro</title>
 
-    <?php require_once "../cabecalho.php"?>
+    <?php require_once "../interface/cabecalho.php"?>
     <style type="text/css">
 
   /* label focus color */
@@ -239,4 +239,4 @@
 
 
 
-<?php require_once "../rodape.php"?>
+<?php require_once "../interface/rodape.php"?>

@@ -1,3 +1,8 @@
+<?php
+session_start();
+var_dump($_SESSION);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -35,6 +40,7 @@
           <i class="material-icons">close</i>
         </div></li>
       </form>
+      <li><a href = "../usuarios/formCadastro.php">Cadastre-se</a></li>
     </div>
       </ul>
 
