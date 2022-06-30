@@ -15,7 +15,7 @@
 
 
 include "../conexao.php";
-include "../cabecalho.php";
+include "../interface/cabecalho.php";
 
 $pesquisa = "%" . trim($_GET['busca']) . "%";
 
@@ -47,4 +47,4 @@ echo "</tbody></table>"
 <script type="text/javascript" src="../materialize/js/jquery-3.6.0.min.js"></script>
    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 
- </html>
+ <?php include('../interface/rodape.php');?>
