@@ -40,7 +40,14 @@ var_dump($_SESSION);
           <i class="material-icons">close</i>
         </div></li>
       </form>
+      <?php if(!isset($_SESSION['id_usuario'])){?>
       <li><a href = "../usuarios/formCadastro.php">Cadastre-se</a></li>
+      <li><a href = "../usuarios/formLogin.php">Entrar</a></li>
+      <?php }else{ ?>
+
+      <li><a href = "../usuarios/logout.php"><i class = "material-icons">logout</i></a></li>
+
+      <?php } ?>
     </div>
       </ul>
 

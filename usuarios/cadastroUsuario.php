@@ -9,7 +9,7 @@ $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
 $sql1 = "SELECT email FROM usuarios WHERE email = '$email";
 $result = mysqli_query($conexao,$sql1);
-if($result = false){
+if($result = true){
     die("E-mail já existe");
 }
 $sql2 = "INSERT INTO usuarios(nome, email, senha) VALUES ('$nome','$email','$senha')";
@@ -20,6 +20,7 @@ if($result2){
     $_SESSION['id_usuario'] = mysqli_insert_id($conexao);
     $_SESSION['nome'] = $nome;
     $_SESSION['email'] = $email;
+    //$_SESSION['foto'] = $foto;
     header("Location:../crud/index.php");
 }
 ?>
