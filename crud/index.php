@@ -7,6 +7,7 @@
 </script>
 
 <?php
+
 include_once "conexao.php";
 $sql = "SELECT * FROM `biografias`";
 $result = mysqli_query($conexao, $sql);
@@ -24,7 +25,10 @@ $infos = mysqli_fetch_all($result, MYSQLI_BOTH);
    <br>
    <div class=" row">
       <div class="col offset-s6">
+
+      <?php if(isset($_SESSION['id_usuario   '])){ ?>
 <a href = "forminsere.php" class="btn-floating waves-effect waves-light brown darken-4"><i class="material-icons">add</i></a>
+      <?php } ?>
 </div>
    </div>
 <?php
@@ -44,9 +48,10 @@ foreach($infos as $chave => $info){
    echo "<td>" . $info['areac'] . "</td>";
   
    echo "<td><a href = 'vermais.php?id=$info[id]' class='btn-floating btn-medium waves-effect waves-light grey lighten-3'><i class='material-icons black-text'>search</i> </a> ";
+  if(isset($_SESSION['id_usuario'])){
    echo "<a href = 'editar.php?id=$info[id]' class='btn-floating btn-medium waves-effect waves-light grey lighten-3'> <i class='material-icons black-text'>create</i> </a> ";
    echo "<a href='#' onclick='confirmacao($info[id])' class='btn-floating btn-medium waves-effect waves-light grey lighten-3'> <i class='material-icons black-text'>delete</i> </a></td>" ;
-   
+  }
 }
 
 echo "</tbody></table>"
