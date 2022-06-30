@@ -37,8 +37,11 @@
 <body>
 
     <main class= "container">
+
+
     <h3 class="center-align">Cadastro de biografia:</h3>
 
+    <div class="card-panel grey lighten-4">
        
         <form action = "insere.php" method = "post" enctype="multipart/form-data">
 
@@ -232,7 +235,7 @@
         
       
     </form>
-
+</div>
 </main>
 </body>
 
