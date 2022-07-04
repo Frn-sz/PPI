@@ -6,8 +6,6 @@
 
     ?>
     <title>Formulário de Cadastro</title>
-
-    <?php require_once "../interface/cabecalho.php"?>
     <style type="text/css">
 
   /* label focus color */
@@ -41,8 +39,9 @@
 </style>
 <body>
 
-    <main class= "container">
-
+    <main>
+    <?php require_once "../interface/cabecalho.php"?>
+    <div class="container">
 
     <h3 class="center-align">Cadastro de biografia:</h3>
 
@@ -240,6 +239,7 @@
         
       
     </form>
+</div>
 </div>
 </main>
 </body>

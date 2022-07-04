@@ -12,9 +12,10 @@
 
 <body>
 
-<?php require_once "../interface/cabecalho.php"?>
 
-    <main class="container">
+    <main>
+    <?php require_once "../interface/cabecalho.php"?>
+    <div class="container">
 
     <br><br>
     <div class="row right">
@@ -100,6 +101,7 @@
     
     
     <a href="biografias.php">Voltar</a>
+    </div>
 </main>
 </body>
 
