@@ -100,7 +100,7 @@
   
     
     
-    <a href="biografias.php">Voltar</a>
+    <a class="waves-effect waves-light btn brown darken-4" href="index.php">Voltar</a>
     </div>
 </main>
 </body>
