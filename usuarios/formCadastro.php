@@ -47,7 +47,10 @@ box-shadow: 0 1px 0 0 #4e342e !important;
 <main>
 
 
-<?php require_once "../interface/cabecalho.php"?>
+<?php require_once "../interface/cabecalho.php";
+    include_once "../funcoes.php";    
+
+?>
 
 
 <h3 class="center-align">Cadastro de Usuário:</h3>
@@ -55,8 +58,13 @@ box-shadow: 0 1px 0 0 #4e342e !important;
 <div class="card-panel grey lighten-4 center-align">
     <form action = "cadastroUsuario.php" method = "post" enctype="multipart/form-data">
 
-    
-<div class="col s6 offset-s6">
+    <div class="row">
+        <div class="col s12">
+           <h4 style = "color:red"> <?= exibeMensagens() ?> </h4>
+
+        </div>
+    </div>
+<div class="col s6 ">
         <div class="file-field input-field">
           <div class="btn brown darken-4">
           <span><i class = "material-icons">add_a_photo</i></span>
@@ -83,14 +91,14 @@ box-shadow: 0 1px 0 0 #4e342e !important;
             </div>
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="senha" type="password" name="senha">
+                    <input id="senha" type="password" name="senha" class="validate">
                     <label for="senha">Senha</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="repetirSenha" type="password" name="repetirSenha">
-                    <label for="repetirSenha">Confirme sua senha</label>
+                    <input id="repetirsenha" type="password" name="repetirSenha" class="validate">
+                    <label for="repetirsenha">Confirme sua senha</label>
                 </div>
             </div>
     

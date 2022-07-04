@@ -1,5 +1,10 @@
 
+  <?php
+  
+  include_once "../funcoes.php";    
+    verificandoUsuario();
 
+    ?>
     <title>Formulário de Cadastro</title>
 
     <?php require_once "../interface/cabecalho.php"?>

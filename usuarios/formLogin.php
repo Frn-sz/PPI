@@ -36,7 +36,8 @@ box-shadow: 0 1px 0 0 #4e342e !important;
 <main>
 
 
-<?php require_once "../interface/cabecalho.php"?>
+<?php require_once "../interface/cabecalho.php";
+   include_once "../funcoes.php";?>
 
 <h3 class="center-align">Login:</h3>
 
@@ -44,7 +45,12 @@ box-shadow: 0 1px 0 0 #4e342e !important;
     <div class="card-panel grey lighten-4">
     <form action = "login.php" method = "post" enctype="multipart/form-data">
 
-            
+    <div class="row">
+        <div class="col offset-s5">
+           <h4 style = "color:red"> <?= exibeMensagens() ?> </h4>
+
+        </div>
+    </div>
             <div class="row">
                 <div class="input-field col s6 offset-s3">
                     <input id="email" type="email" name="email">

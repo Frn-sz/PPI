@@ -4,6 +4,10 @@
     $sql = "SELECT * FROM `biografias` WHERE id=$id";
     $result = mysqli_query($conexao, $sql);
     $info = mysqli_fetch_assoc($result);
+
+    include_once "../funcoes.php";    
+    verificandoUsuario();
+
   ?>
 
     <title><?= $info['apelido'] ?> </title>

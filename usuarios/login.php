@@ -15,7 +15,11 @@ if(password_verify($senha, $usuario['senha'])){
     $_SESSION['email'] = $usuario['email'];
     $_SESSION['foto'] = $usuario['foto'];
     header("Location:../crud/index.php");
+}else if(is_null($usuario)){
+    $_SESSION['mensagem'] = "Usuário não existe!";
+    header("location:formLogin.php");
 }else{
-    die("Não foi possível realizar login");
+    $_SESSION['mensagem'] = "Senha inválida!";
+    header("location:formLogin.php");
 }
 ?>

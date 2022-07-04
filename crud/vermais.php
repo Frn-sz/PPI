@@ -8,23 +8,27 @@
     ?>
 
     <title><?= $biografia['apelido']?></title>
-    <?php require_once "../interface/cabecalho.php"?>
+    
 
 <body>
+
+<?php require_once "../interface/cabecalho.php"?>
+
     <main class="container">
+
     <br><br>
     <div class="row right">
    
     <br><br>
-    <div class="col offset-s5">
+    <div class="col">
     <button class = "btn-floating brown darken-4"><a href="../arquivos/<?= $biografia['arquivo'];?>" download="<?=$biografia['arquivo'];?>"><i class = "material-icons">file_download</i></a></button>
     </div> 
 </div>
 <div class="row">
-    <div class="col s12 m7">
+    <div class="col s12 m4">
       <div class="card grey lighten-3">
         <div class="card-image">
-        <img src = <?= "'../imagens/$biografia[foto]' width = '400'";?>>
+        <img class = "materialboxed" src = <?= "'../imagens/$biografia[foto]' width = '400'";?>>
         </div>
         <div class="card-content">
         <span class="card-title"><?= $biografia['nome']; ?></span>
