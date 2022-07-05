@@ -11,8 +11,6 @@
   ?>
 
     <title><?= $info['apelido'] ?> </title>
-
-    <?php require_once "../interface/cabecalho.php" ?>
   
     <style type="text/css">
 
@@ -47,7 +45,9 @@
 </style>
 
 <body>
-    <main class= "container">
+    <main>
+    <?php require_once "../interface/cabecalho.php" ?>
+    <div class="container">
         <h1> Edição de obras:</h1>
 
         <form action = "edita.php" method = "post" enctype="multipart/form-data">
@@ -235,6 +235,7 @@
         <input type = "hidden" name = "id" value = "<?=$info['id']?>">
 
     </form>
+    </div>
 </main>
 </body>
 

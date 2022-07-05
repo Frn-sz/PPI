@@ -16,12 +16,13 @@ $infos = mysqli_fetch_all($result, MYSQLI_BOTH);
 
    <title>Biografias</title>
 
- <?php require_once "../interface/cabecalho.php"?>
 
 <body>
 
 
-<main class= "container">
+<main>
+<?php require_once "../interface/cabecalho.php"?>
+<div class="container">
    <br>
    <div class=" row">
       <div class="col offset-s6">
@@ -55,6 +56,7 @@ foreach($infos as $chave => $info){
 
 echo "</tbody></table>"
 ?>
+</div>
    </main>
    
 </body>
