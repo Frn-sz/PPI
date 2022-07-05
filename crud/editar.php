@@ -116,7 +116,7 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="gpSocial" type="text" name="gpSocial" value = <?= $info['gpSocial']?>>
+                <textarea class="materialize-textarea" id="gpSocial" type="text" name="gpSocial" value = <?= $info['gpSocial']?>></textarea>
                     <label for="gpSocial">Grupo Social</label>
                 </div>
             </div>
@@ -144,14 +144,14 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="mudancagp" type="text" name="mudancagp" value = <?= $info['mudancaGp']?>>
+                <textarea class="materialize-textarea" id="mudancagp" type="text" name="mudancagp" value = <?= $info['mudancaGp']?>></textarea>
                     <label for="mudancagp">Mudança de grupo social</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="eventoHist" type="text" name="eventoHist" value = <?= $info['eventoHist']?>>
+                <textarea class="materialize-textarea" id="eventoHist" type="text" name="eventoHist" value = <?= $info['eventoHist']?>></textarea>
                     <label for="eventoHist">Evento histórico</label>
                 </div>
             </div>
@@ -193,7 +193,7 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="frase" type="text" name="frase" value = <?= $info['apelido']?>>
+                <textarea class="materialize-textarea" id="frase" type="text" name="frase" value = <?= $info['frase']?>></textarea>
                     <label for="frase">Frases marcantes</label>
                 </div>
             </div>

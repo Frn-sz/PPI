@@ -115,7 +115,7 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="gpSocial" type="text" name="gpSocial">
+                <textarea class="materialize-textarea" id="gpSocial" type="text" name="gpSocial"></textarea>
                     <label for="gpSocial">Grupo Social</label>
                 </div>
             </div>
@@ -143,14 +143,14 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="mudancagp" type="text" name="mudancagp">
+                <textarea class="materialize-textarea" id="mudancagp" type="text" name="mudancagp"></textarea>
                     <label for="mudancagp">Mudança de grupo social</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="eventoHist" type="text" name="eventoHist">
+                <textarea class="materialize-textarea" id="eventoHist" type="text" name="eventoHist"></textarea>
                     <label for="eventoHist">Evento histórico</label>
                 </div>
             </div>
@@ -192,7 +192,7 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="frase" type="text" name="frase">
+                    <textarea class="materialize-textarea" id="frase" type="text" name="frase"></textarea>
                     <label for="frase">Frases marcantes</label>
                 </div>
             </div>
