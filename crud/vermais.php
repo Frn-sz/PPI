@@ -15,9 +15,14 @@
 
     <main>
 
+
+    <?php include_once('../interface/cabecalho.php'); ?>
     <br><br>
+  
+    <div class="container">
 <div class="row">
-    <div class="col s12 m4">
+    <div class="col offset-s3">
+
       <div class="card grey lighten-3">
         <div class="card-image">
         <img class = "materialboxed" src = <?= "'../imagens/$biografia[foto]' width = '400'";?>>
@@ -84,20 +89,18 @@
     <div class="row ">
     Referências: <?= $biografia['referencias']; ?>
     </div>
+    <div class="row center">
+    <button class = "btn-floating brown darken-4"><a href="../arquivos/<?= $biografia['arquivo'];?>" download="<?=$biografia['arquivo'];?>"><i class = "material-icons">file_download</i></a></button>
+    </div>
+        </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row right">
-   
-   <br><br>
-   <div class="col">
-   <button class = "btn-floating brown darken-4"><a href="../arquivos/<?= $biografia['arquivo'];?>" download="<?=$biografia['arquivo'];?>"><i class = "material-icons">file_download</i></a></button>
-   </div> 
-</div>
+
     
     
-    <a class="waves-effect waves-light btn brown darken-4" href="index.php">Voltar</a>
+    
     </div>
 </main>
 </body>

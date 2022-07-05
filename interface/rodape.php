@@ -24,6 +24,7 @@
     $('.sidenav').sidenav();
   });
   </script>
+
   <script>
 
 let senha = document.getElementById('senha');
@@ -31,7 +32,7 @@ let senhaC = document.getElementById('repetirsenha');
 
 function validarSenha() {
   if (senha.value != senhaC.value) {
-    senhaC.setCustomValidity(" ");
+    senhaC.setCustomValidity("As senhas não conferem");
     senhaC.reportValidity();
     return false;
   } else {
@@ -46,7 +47,30 @@ senhaC.addEventListener('input', validarSenha);
 
 
 </script>
+<script>
+  var clicked = 0;
 
+$(".toggle-password").click(function (e) {
+   e.preventDefault();
+
+  $(this).toggleClass("toggle-password");
+    if (clicked == 0) {
+      $(this).html('<span class="material-icons">visibility_off</span >');
+       clicked = 1;
+    } else {
+       $(this).html('<span class="material-icons">visibility</span >');
+        clicked = 0;
+     }
+
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+     input.attr("type", "text");
+  } else {
+     input.attr("type", "password");
+  }
+});
+   
+</script>
 
 <script>
  $('.dropdown-trigger').dropdown();

@@ -77,7 +77,7 @@ box-shadow: 0 1px 0 0 #4e342e !important;
 </div>
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="nome" type="text" name="nome">
+                    <input id="nome" type="text" name="nome" required>
                     <label for="nome">Nome</label>
                 </div>
             </div>
@@ -85,20 +85,22 @@ box-shadow: 0 1px 0 0 #4e342e !important;
             
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="email" type="email" name="email">
+                    <input id="email" type="email" name="email" required>
                     <label for="email">E-mail</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="senha" type="password" name="senha" class="validate">
+                    <input id="senha" type="password" name="senha" class="validate" required>
                     <label for="senha">Senha</label>
+                    <span toggle="#senha" class="field-icon toggle-password"><span class="material-icons">visibility</span></span>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6 offset-s3">
-                    <input id="repetirsenha" type="password" name="repetirSenha" class="validate">
+                    <input id="repetirsenha" type="password" name="repetirSenha" class="validate" required>
                     <label for="repetirsenha">Confirme sua senha</label>
+                    <span toggle="#repetirsenha" class="field-icon toggle-password "><span class="material-icons">visibility</span></span>
                 </div>
             </div>
     

@@ -18,6 +18,17 @@ session_start();
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
    <meta charset="UTF-8">
+
+   <style>
+span.field-icon {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+    </style>
    </head>
 
 
