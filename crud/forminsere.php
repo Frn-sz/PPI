@@ -51,14 +51,14 @@
 
         <div class="row">
                 <div class="input-field col s12">
-                <textarea  id="apelido" type="text" name="apelido" class = "materialize-textarea"> </textarea>
+                <textarea  id="apelido" type="text" name="apelido" class = "materialize-textarea"></textarea>
                     <label for="apelido">Apelido</label>
                 </div>
             </div>
 
         <div class="row">
                 <div class="input-field col s12">
-                <textarea id="nome" type="text" name="nome" class = "materialize-textarea" > </textarea>
+                <textarea id="nome" type="text" name="nome" class = "materialize-textarea"></textarea>
                     <label for="nome">Nome verdadeiro</label>
                 </div>
             </div>
@@ -81,62 +81,62 @@
        
             <div class="row">
                 <div class="input-field col s12">
-                <textarea  id= "dataNasc" placeholder="" type = "date" name="dataNasc" class = "materialize-textarea"> </textarea>
+                <textarea  id= "dataNasc" placeholder="" type = "date" name="dataNasc" class = "materialize-textarea"></textarea>
                     <label for="dataNasc">Data de nascimento</label>
                 </div>
             </div>
              <div class="row">
                  <div class="input-field col s12">
-                 <textarea id= "dataFal" placeholder="" type = "date" name="dataFal" class = "materialize-textarea"> </textarea>
+                 <textarea id= "dataFal" placeholder="" type = "date" name="dataFal" class = "materialize-textarea"></textarea>
                     <label for="dataFal">Data de falecimento</label>
                 </div>
             </div>
        
             <div class="row">
                 <div class="input-field col s12">
-                <textarea  id="localNas" type="text" name="localNas" class = "materialize-textarea"> </textarea>
+                <textarea  id="localNas" type="text" name="localNas" class = "materialize-textarea"></textarea>
                     <label for="localNas">Local de nascimento</label>
                 </div>
             </div>
         
             <div class="row">
                 <div class="input-field col s12">
-                <textarea  id="localFal" type="text" name="localFal" class = "materialize-textarea"> </textarea>
+                <textarea  id="localFal" type="text" name="localFal" class = "materialize-textarea"></textarea>
                     <label for="localFal">Local de falecimento</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                <textarea  id="pais" type="text" name="pais" class = "materialize-textarea"> </textarea>
+                <textarea  id="pais" type="text" name="pais" class = "materialize-textarea"></textarea>
                     <label for="pais">Pais</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                <textarea class="materialize-textarea" id="gpSocial" type="text" name="gpSocial" ></textarea>
+                <textarea class="materialize-textarea" id="gpSocial" type="text" name="gpSocial"></textarea>
                     <label for="gpSocial">Grupo Social</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                <textarea id="pesFamosa" type="text" name="pesFamosa" class = "materialize-textarea"> </textarea>
+                <textarea  class = "materialize-textarea" id="pesFamosa" type="text" name="pesFamosa"></textarea>
                     <label for="pesFamosa">Pessoas famosas na família</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                <textarea  id="formacao" type="text" name="formacao" class = "materialize-textarea"> </textarea>
+                <textarea  id="formacao" type="text" name="formacao" class = "materialize-textarea"></textarea>
                     <label for="formacao">Formação</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                <textarea id="profissao" type="text" name="profissao" class = "materialize-textarea"> </textarea>
+                <textarea id="profissao" type="text" name="profissao" class = "materialize-textarea"></textarea>
                     <label for="profissao">Profissão</label>
                 </div>
             </div>
