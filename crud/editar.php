@@ -7,7 +7,7 @@
 
     include_once "../funcoes.php";    
     verificandoUsuario();
-
+    var_dump($info);
   ?>
 
     <title><?= $info['apelido'] ?> </title>
@@ -54,14 +54,14 @@
 
         <div class="row">
                 <div class="input-field col s12">
-                    <input id="apelido" type="text" name="apelido" value = <?= $info['apelido']?>>
+                    <textarea id="apelido" type="text" name="apelido"  class = "materialize-textarea"> <?= $info['apelido']?> </textarea>
                     <label for="apelido">Apelido</label>
                 </div>
             </div>
         
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="nome" type="text" name="nome" value = <?= $info['nome']?>>
+                    <textarea id="nome" type="text" name="nome"  class = "materialize-textarea"> <?= $info['nome']?> </textarea>
                     <label for="nome">Nome verdadeiro</label>
                 </div>
             </div>
@@ -81,84 +81,84 @@
        
             <div class="row">
                 <div class="input-field col s12">
-                    <input id= "dataNasc" placeholder="" type = "date" name="dataNasc" value = <?= $info['dataNas']?>></p>
+                <input id= "dataNasc" placeholder="" type = "date" name="dataNasc" value = <?= $info['dataNas']?>></p>
                     <label for="dataNasc">Data de nascimento</label>
                 </div>
             </div>
 
             <div class="row">
                  <div class="input-field col s12">
-                    <input id= "dataFal" placeholder="" type = "date" name="dataFal" value = <?= $info['dataFal']?>></p>
+                 <input id= "dataFal" placeholder="" type = "date" name="dataFal"  value = <?= $info['dataFal']?>></p>
                     <label for="dataFal">Data de falecimento</label>
                 </div>
             </div>
        
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="localNas" type="text" name="localNas" value = <?= $info['localNas']?>>
+                <textarea id="localNas" type="text" name="localNas" class = "materialize-textarea"> <?= $info['localNas']?> </textarea>
                     <label for="localNas">Local de nascimento</label>
                 </div>
             </div>
         
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="localFal" type="text" name="localFal" value = <?= $info['localFal']?>>
+                <textarea id="localFal" type="text" name="localFal" class = "materialize-textarea"> <?= $info['localFal']?></textarea>
                     <label for="localFal">Local de falecimento</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="pais" type="text" name="pais" value = <?= $info['pais']?>>
+                <textarea id="pais" type="text" name="pais" class = "materialize-textarea"> <?= $info['pais']?></textarea>
                     <label for="pais">Pais</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="gpSocial" type="text" name="gpSocial" value = <?= $info['gpSocial']?>>
+                <textarea id="gpSocial" type="text" name="gpSocial"  class = "materialize-textarea"> <?= $info['gpSocial']?></textarea>
                     <label for="gpSocial">Grupo Social</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="pesFamosa" type="text" name="pesFamosa" value = <?= $info['pesFamosa']?>>
+                <textarea id="pesFamosa" type="text" name="pesFamosa" class = "materialize-textarea"> <?= $info['pesFamosa']?></textarea>
                     <label for="pesFamosa">Pessoas famosas na família</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="formacao" type="text" name="formacao" value = <?= $info['formacao']?>>
+                <textarea id="formacao" type="text" name="formacao"  class = "materialize-textarea"> <?= $info['formacao']?></textarea>
                     <label for="formacao">Formação</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="profissao" type="text" name="profissao" value = <?= $info['profissao']?>>
+                <textarea id="profissao" type="text" name="profissao" class = "materialize-textarea">  <?= $info['profissao']?></textarea>
                     <label for="profissao">Profissão</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="mudancagp" type="text" name="mudancagp" value = <?= $info['mudancaGp']?>>
+                <textarea id="mudancagp" type="text" name="mudancaGp" class = "materialize-textarea"> <?= $info['mudancaGp']?></textarea>
                     <label for="mudancagp">Mudança de grupo social</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="eventoHist" type="text" name="eventoHist" value = <?= $info['eventoHist']?>>
+                <textarea id="eventoHist" type="text" name="eventoHist" class = "materialize-textarea">  <?= $info['eventoHist']?>  </textarea>
                     <label for="eventoHist">Evento histórico</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-field col s12">
-                    <textarea id="racagen" class = "materialize-textarea" name="racagen"><?= $info['racaGen']?></textarea>
+                    <textarea id="racagen" class = "materialize-textarea" name="racaGen"><?=$info['racaGen']?></textarea>
                     <label for="racagen">Raça e gênero</label>
                 </div>
             </div>
@@ -193,7 +193,7 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="frase" type="text" name="frase" value = <?= $info['apelido']?>>
+                    <textarea id="frase" type="text" name="frase" class = "materialize-textarea"> <?= $info['frase']?> </textarea>
                     <label for="frase">Frases marcantes</label>
                 </div>
             </div>
