@@ -7,7 +7,6 @@
 
     include_once "../funcoes.php";    
     verificandoUsuario();
-    var_dump($info);
   ?>
 
     <title><?= $info['apelido'] ?> </title>
