@@ -25,9 +25,8 @@ $infos = mysqli_fetch_all($result, MYSQLI_BOTH);
    <br>
    <div class=" row">
       <div class="col offset-s6">
-
       <?php if(isset($_SESSION['id_usuario   '])){ ?>
-<a href = "forminsere.php" class="btn-floating waves-effect waves-light brown darken-4"><i class="material-icons">add</i></a>
+      <a href = "forminsere.php" class="btn-floating waves-effect waves-light brown darken-4"><i class="material-icons">add</i></a>
       <?php } ?>
 </div>
    </div>

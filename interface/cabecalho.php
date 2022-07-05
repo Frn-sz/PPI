@@ -1,6 +1,8 @@
 <?php
-if(!isset($_SESSION))
+if(!isset($_SESSION)){
 session_start();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -45,6 +47,7 @@ session_start();
       <li><a href = "../usuarios/formCadastro.php">Cadastre-se</a></li>
       <li><a href = "../usuarios/formLogin.php">Entrar</a></li>
       <?php }else{ ?>
+        <li><a href = "../usuarios/formEditar.php">Editar meu perfil</a></li>
       <li><a href="../crud/forminsere.php">Cadastrar Biografias</a></li> 
       <li><a href = "../usuarios/logout.php"><i class = "material-icons">logout</i></a></li>
 
@@ -57,7 +60,11 @@ session_start();
       </ul>
     </div>  
   </nav>
-
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href='..usuarios/formEditar.php' class = "black-text white">Editar perfil</a></li>
+  
+  </ul>
+        
   <ul id="mobile-demo" class="sidenav">
         <li><a href="../crud/forminsere.php">Cadastrar Biografias</a></li>
       </ul>

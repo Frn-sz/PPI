@@ -44,7 +44,13 @@ function validarSenha() {
 senha.addEventListener('blur', validarSenha);
 senhaC.addEventListener('input', validarSenha);
 
+
 </script>
 
+
+<script>
+ $('.dropdown-trigger').dropdown();
+
+</script>
   
 </html>

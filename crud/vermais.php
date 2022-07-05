@@ -14,16 +14,9 @@
 
 <?php require_once "../interface/cabecalho.php"?>
 
-    <main class="container">
+    <main>
 
     <br><br>
-    <div class="row right">
-   
-    <br><br>
-    <div class="col">
-    <button class = "btn-floating brown darken-4"><a href="../arquivos/<?= $biografia['arquivo'];?>" download="<?=$biografia['arquivo'];?>"><i class = "material-icons">file_download</i></a></button>
-    </div> 
-</div>
 <div class="row">
     <div class="col s12 m4">
       <div class="card grey lighten-3">
@@ -96,7 +89,13 @@
       </div>
     </div>
   </div>
-  
+  <div class="row right">
+   
+   <br><br>
+   <div class="col">
+   <button class = "btn-floating brown darken-4"><a href="../arquivos/<?= $biografia['arquivo'];?>" download="<?=$biografia['arquivo'];?>"><i class = "material-icons">file_download</i></a></button>
+   </div> 
+</div>
     
     
     <a href="biografias.php">Voltar</a>

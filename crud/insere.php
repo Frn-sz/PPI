@@ -22,7 +22,7 @@ $sql = "INSERT INTO `biografias`( `apelido`, `nome`, `foto`, `dataNas`, `dataFal
 VALUES ('$_POST[apelido]','$_POST[nome]','$nomefoto','$_POST[dataNasc]','$_POST[dataFal]','$_POST[localNas]','$_POST[localFal]',
 '$_POST[pais]','$_POST[pesFamosa]','$_POST[gpSocial]','$_POST[formacao]','$_POST[profissao]','$_POST[areac]','$_POST[mudancagp]','$_POST[eventoHist]','$_POST[racagen]','$_POST[contribuicao]',
 '$_POST[legadoPerm]','$_POST[atoPoli]','$_POST[ideias]','$_POST[frase]','$_POST[referencias]', '$nomearquivo')";
-var_dump($sql);
+
 $result = mysqli_query($conexao, $sql);
 
 if($result){
