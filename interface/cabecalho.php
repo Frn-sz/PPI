@@ -2,7 +2,7 @@
 if(!isset($_SESSION)){
 session_start();
 }
-
+var_dump($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +35,7 @@ span.field-icon {
 
 <div class="navbar-fixed">
 <nav class="brown lighten-2">
-
+<button href="#" data-target="slide-out" class="sidenav-trigger btn-flat"><i class="material-icons">menu</i></button>
     <div class="nav-wrapper container">
 
       <a href="../crud/index.php" class="brand-logo">Trabalho PPI</a>
@@ -71,9 +71,13 @@ span.field-icon {
       </ul>
     </div>  
   </nav>
-  <ul id='dropdown1' class='dropdown-content'>
-    <li><a href='..usuarios/formEditar.php' class = "black-text white">Editar perfil</a></li>
-  
+
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+     
+      <a href="#user"><img style = "border-radius:100%" width = 200 src="../imagens/<?=$_SESSION['foto']?>"></a>
+      <a href="#name"><span class="black-text name"><?=$_SESSION['nome']?></span></a>
+      <a href="#email"><span class="black-text email"><?=$_SESSION['email']?></span></a>
   </ul>
         
   <ul id="mobile-demo" class="sidenav">
