@@ -81,13 +81,13 @@
        
             <div class="row">
                 <div class="input-field col s12">
-                <textarea  id= "dataNasc" placeholder="" type = "date" name="dataNasc" class = "materialize-textarea"></textarea>
+                <input id= "dataNasc" placeholder="" type = "date" name="dataNasc" class = "materialize-textarea">
                     <label for="dataNasc">Data de nascimento</label>
                 </div>
             </div>
              <div class="row">
                  <div class="input-field col s12">
-                 <textarea id= "dataFal" placeholder="" type = "date" name="dataFal" class = "materialize-textarea"></textarea>
+                 <input id= "dataFal" placeholder="" type = "date" name="dataFal" class = "materialize-textarea">
                     <label for="dataFal">Data de falecimento</label>
                 </div>
             </div>
