@@ -76,5 +76,9 @@ $(".toggle-password").click(function (e) {
  $('.dropdown-trigger').dropdown();
 
 </script>
-  
+<script>
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+</script>
 </html>

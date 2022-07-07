@@ -1,5 +1,5 @@
 <?php include('../funcoes.php');
-
+verificandoUsuario();
 include('../conexao.php');
 if(!isset($_SESSION)){
     session_start();
@@ -15,7 +15,7 @@ $usuario = mysqli_fetch_assoc($resultadoUsuario);
 
 <?php include('../interface/cabecalho.php'); ?>
 <div class="container">
-<form action = "editarUsuario.php" method = "Post">
+<form action = "editarUsuario.php" method = "post" enctype = "multipart/form-data">
 <div class="row">
         <div class="col s12">
            <h4 style = "color:red"> <?= exibeMensagens() ?> </h4>
@@ -26,10 +26,10 @@ $usuario = mysqli_fetch_assoc($resultadoUsuario);
         <div class="file-field input-field">
           <div class="btn brown darken-4">
           <span><i class = "material-icons">add_a_photo</i></span>
-      <input type="file" name = "foto">
+      <input type="file" name ="foto">
       </div>
     <div class="file-path-wrapper">
-    <input class="file-path validate" type="text" placeholder="Adicione uma foto de perfil">
+    <input class="file-path validate" type="text"  placeholder="Adicione uma foto de perfil">
   </div>
 </div>
 </div>

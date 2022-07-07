@@ -2,7 +2,7 @@
 if(!isset($_SESSION)){
 session_start();
 }
-var_dump($_SESSION);
+
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +35,9 @@ span.field-icon {
 
 <div class="navbar-fixed">
 <nav class="brown lighten-2">
+<?php if(isset($_SESSION['id_usuario'])){ ?>
 <button href="#" data-target="slide-out" class="sidenav-trigger btn-flat"><i class="material-icons">menu</i></button>
+<?php } ?>
     <div class="nav-wrapper container">
 
       <a href="../crud/index.php" class="brand-logo">Trabalho PPI</a>

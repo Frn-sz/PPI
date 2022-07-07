@@ -8,8 +8,6 @@
     ?>
 
     <title><?= $biografia['apelido']?></title>
-    
-
 <body>
 
 
@@ -21,11 +19,10 @@
   
     <div class="container">
 <div class="row">
-    <div class="col offset-s3">
-
+    <div class="col">
       <div class="card grey lighten-3">
         <div class="card-image">
-        <img class = "materialboxed" src = <?= "'../imagens/$biografia[foto]' width = '400'";?>>
+        <img class="materialboxed" width = 200 src = <?= "'../imagens/$biografia[foto]'";?>>
         </div>
         <div class="card-content">
         <span class="card-title"><?= $biografia['nome']; ?></span>
